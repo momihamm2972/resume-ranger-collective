@@ -1,0 +1,100 @@
+
+import { ExternalLink, Github } from 'lucide-react';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+
+const projectsData = [
+  {
+    id: 1,
+    title: 'Smart Campus Navigator',
+    description: 'A mobile app that helps students navigate campus, find available study spaces, and track shuttle buses in real-time.',
+    image: 'https://images.unsplash.com/photo-1581092921461-39b9feb3f1f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    techStack: ['React Native', 'Firebase', 'Google Maps API'],
+    githubLink: 'https://github.com',
+    liveLink: 'https://example.com'
+  },
+  {
+    id: 2,
+    title: 'StudyBuddy AI',
+    description: 'An AI-powered study assistant that helps students create personalized study plans, flashcards, and practice quizzes.',
+    image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2065&q=80',
+    techStack: ['Python', 'TensorFlow', 'Flask', 'React'],
+    githubLink: 'https://github.com',
+    liveLink: 'https://example.com'
+  },
+  {
+    id: 3,
+    title: 'EcoTrack',
+    description: 'A web application that helps users track and reduce their carbon footprint through daily lifestyle choices.',
+    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    techStack: ['React', 'Node.js', 'MongoDB', 'D3.js'],
+    githubLink: 'https://github.com',
+    liveLink: 'https://example.com'
+  }
+];
+
+const Projects = () => {
+  return (
+    <section id="projects" className="py-20 bg-portfolio-lightGray">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16 animate-slide-up">
+          <h2 className="text-3xl md:text-4xl font-bold text-portfolio-dark mb-4">My Projects</h2>
+          <div className="w-20 h-1 bg-portfolio-blue mx-auto"></div>
+          <p className="mt-6 text-lg text-portfolio-gray max-w-2xl mx-auto">
+            Here are some of the projects I've worked on. Each project represents my skills, 
+            interests, and the technologies I've learned.
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projectsData.map((project) => (
+            <Card key={project.id} className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow animate-slide-up">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-xl text-portfolio-dark">{project.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-portfolio-gray mb-4">{project.description}</p>
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {project.techStack.map((tech, index) => (
+                    <Badge key={index} variant="secondary" className="bg-white border border-portfolio-blue text-portfolio-blue font-normal">
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+              <CardFooter className="flex justify-between">
+                <a 
+                  href={project.githubLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-portfolio-gray hover:text-portfolio-blue transition-colors flex items-center gap-1"
+                >
+                  <Github size={18} />
+                  <span>Code</span>
+                </a>
+                <a 
+                  href={project.liveLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-portfolio-gray hover:text-portfolio-blue transition-colors flex items-center gap-1"
+                >
+                  <ExternalLink size={18} />
+                  <span>Live Demo</span>
+                </a>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

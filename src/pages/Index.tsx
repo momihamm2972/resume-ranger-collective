@@ -1,12 +1,36 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect } from 'react';
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import About from '@/components/About';
+import Projects from '@/components/Projects';
+import Skills from '@/components/Skills';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
+import { Link } from 'react-scroll';
+import { Button } from '@/components/ui/button';
+import { ArrowUp } from 'lucide-react';
 
 const Index = () => {
+  useEffect(() => {
+    document.title = "John Doe | Portfolio";
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="relative">
+      <Navbar />
+      <Hero />
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
+      <Footer />
+      
+      <Link to="home" smooth={true} duration={500} className="fixed bottom-8 right-8 z-50">
+        <Button className="rounded-full w-12 h-12 bg-portfolio-blue hover:bg-portfolio-darkBlue shadow-lg" aria-label="Scroll to top">
+          <ArrowUp size={20} />
+        </Button>
+      </Link>
     </div>
   );
 };
