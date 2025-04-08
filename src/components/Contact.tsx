@@ -65,8 +65,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-medium text-portfolio-dark">Email</h4>
-                    <a href="mailto:john.doe@example.com" className="text-portfolio-gray hover:text-portfolio-blue transition-colors">
-                      john.doe@example.com
+                    <a href="mailto:momihamm@example.com" className="text-portfolio-gray hover:text-portfolio-blue transition-colors">
+                      momihamm@example.com
                     </a>
                   </div>
                 </div>
@@ -123,7 +123,7 @@ const Contact = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="John Doe"
+                      placeholder="MOHAMED MIHAMMI"
                       required
                       className="w-full border-gray-300 focus:border-portfolio-blue focus:ring-portfolio-blue"
                     />
@@ -139,7 +139,7 @@ const Contact = () => {
                       type="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="john.doe@example.com"
+                      placeholder="momihamm@example.com"
                       required
                       className="w-full border-gray-300 focus:border-portfolio-blue focus:ring-portfolio-blue"
                     />

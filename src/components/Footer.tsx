@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <h3 className="text-2xl font-bold mb-2">John Doe</h3>
+            <h3 className="text-2xl font-bold mb-2">MOHAMED MIHAMMI</h3>
             <p className="text-gray-400">Computer Science Student</p>
           </div>
           
@@ -54,14 +54,14 @@ const Footer = () => {
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-portfolio-blue transition-colors">
               <Twitter size={24} />
             </a>
-            <a href="mailto:john.doe@example.com" className="text-gray-400 hover:text-portfolio-blue transition-colors">
+            <a href="mailto:momihamm@example.com" className="text-gray-400 hover:text-portfolio-blue transition-colors">
               <Mail size={24} />
             </a>
           </div>
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} John Doe. All rights reserved.</p>
+          <p>&copy; {currentYear} MOHAMED MIHAMMI. All rights reserved.</p>
           <p className="mt-2 text-sm">
             <a href="/resume.pdf" download="resume.pdf" className="hover:text-portfolio-blue transition-colors">
               Download Resume

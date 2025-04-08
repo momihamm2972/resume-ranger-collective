@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-10 md:mb-0 animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-portfolio-dark mb-4">
-              Hi, I'm <span className="text-portfolio-blue">John Doe</span>
+              Hi, I'm <span className="text-portfolio-blue">MOHAMED MIHAMMI</span>
             </h1>
             <h2 className="text-2xl md:text-3xl lg:text-4xl text-portfolio-gray mb-6">
               Computer Science Student
@@ -42,7 +42,7 @@ const Hero = () => {
             <div className="bg-white p-1 rounded-full shadow-lg max-w-xs md:max-w-sm mx-auto">
               <img
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
-                alt="John Doe"
+                alt="MOHAMED MIHAMMI"
                 className="rounded-full aspect-square object-cover"
               />
             </div>
