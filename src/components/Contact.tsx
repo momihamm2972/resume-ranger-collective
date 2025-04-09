@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/components/ui/use-toast';
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
   const { toast } = useToast();
@@ -21,26 +22,41 @@ const Contact = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
     
-    // Simulate form submission
+  //   // Simulate form submission
+  //   setTimeout(() => {
+  //     toast({
+  //       title: "Message sent!",
+  //       description: "Thank you for reaching out. I'll get back to you soon.",
+  //     });
+  //     setFormData({
+  //       name: '',
+  //       email: '',
+  //       subject: '',
+  //       message: ''
+  //     });
+  //     setIsSubmitting(false);
+  //   }, 1500);
+  // };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_kc4awvf', 'template_49b5z5f', e.target, 'w32M1D4XAwD2h7l9z');
     setTimeout(() => {
-      toast({
-        title: "Message sent!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
-      });
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-      setIsSubmitting(false);
-    }, 1500);
-  };
-
+          toast({
+            title: "Message sent!",
+            description: "Thank you for reaching out. I'll get back to you soon.",
+          });
+          setFormData({
+            name: '',
+            email: '',
+            subject: '',
+            message: ''
+          });
+        })
+  }
   return (
     <section id="contact" className="py-20 bg-portfolio-lightGray">
       <div className="container mx-auto px-4">

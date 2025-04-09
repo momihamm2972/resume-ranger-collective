@@ -2,7 +2,7 @@
 import { ArrowDown } from 'lucide-react';
 import { Link } from 'react-scroll';
 import { Button } from '@/components/ui/button';
-import mohamedImg from './FC_Bayern_München_logo_(2024).svg.png'; // ← the ./ means "same folder"
+import mohamedImg from './momihamm.jpg'; // ← the ./ means "same folder"
 
 const Hero = () => {
   return (
