@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="text-portfolio-darkBlue font-bold text-2xl">
           <ScrollLink to="home" smooth={true} duration={500} className="cursor-pointer">
-            Portfolio
+            MOMIHAMM
           </ScrollLink>
         </div>
         

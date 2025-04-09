@@ -13,7 +13,7 @@ import { ArrowUp } from 'lucide-react';
 
 const Index = () => {
   useEffect(() => {
-    document.title = "MOHAMED MIHAMMI | Portfolio";
+    document.title = "MOHAMED MIHAMMI";
   }, []);
 
   return (

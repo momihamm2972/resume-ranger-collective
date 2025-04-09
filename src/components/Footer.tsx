@@ -45,16 +45,17 @@ const Footer = () => {
           </div>
           
           <div className="flex gap-4">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-portfolio-blue transition-colors">
+            <a href="https://github.com/momihamm2972" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-portfolio-blue transition-colors">
               <Github size={24} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-portfolio-blue transition-colors">
+            <a href="https://www.linkedin.com/in/momihamm/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-portfolio-blue transition-colors">
               <Linkedin size={24} />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-portfolio-blue transition-colors">
+            <a href="https://x.com/Moha911337" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-portfolio-blue transition-colors">
               <Twitter size={24} />
+              {/* <X size={24} /> */}
             </a>
-            <a href="mailto:momihamm@example.com" className="text-gray-400 hover:text-portfolio-blue transition-colors">
+            <a href="mailto:mmi22138@gmail.com" className="text-gray-400 hover:text-portfolio-blue transition-colors">
               <Mail size={24} />
             </a>
           </div>
