@@ -3,6 +3,8 @@ import { ExternalLink, Github } from 'lucide-react';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import super_pong from './38e83ea2-7e2d-40f9-896f-44cc8a3e4ebf.png';
+import church from './kanisa.png';
+import incep from './magicstudio-art01.jpeg';
 
 const projectsData = [
   {
@@ -17,20 +19,22 @@ const projectsData = [
   },
   {
     id: 2,
-    title: 'StudyBuddy AI',
-    description: 'An AI-powered study assistant that helps students create personalized study plans, flashcards, and practice quizzes.',
-    image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2065&q=80',
-    techStack: ['Python', 'TensorFlow', 'Flask', 'React'],
-    githubLink: 'https://github.com',
+    title: 'IRC',
+    description: 'A web-based IRC app that lets users join chat rooms, create channels, and connect with communities in real time — all from a clean, modern interface.',
+    // image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2065&q=80',
+    image: church,
+    techStack: ['C', 'C++', 'Lime Chat'],
+    githubLink: 'https://github.com/Abdelmathin/42cursus-ft_irc',
     liveLink: 'https://example.com'
   },
   {
     id: 3,
-    title: 'EcoTrack',
-    description: 'A web application that helps users track and reduce their carbon footprint through daily lifestyle choices.',
-    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-    techStack: ['React', 'Node.js', 'MongoDB', 'D3.js'],
-    githubLink: 'https://github.com',
+    title: 'Inception',
+    description: 'A containerized web stack using Docker to deploy a secure WordPress site with Nginx, MariaDB, and PHP — fully automated and ready for scalable web hosting.',
+    // image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    image: incep,
+    techStack: ['Docker', 'wordpress', 'MariaDB', 'nginx', 'PHP', 'Shell'],
+    githubLink: 'https://github.com/momihamm2972/Inception25',
     liveLink: 'https://example.com'
   }
 ];
