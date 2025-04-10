@@ -2,15 +2,17 @@
 import { ExternalLink, Github } from 'lucide-react';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import super_pong from './38e83ea2-7e2d-40f9-896f-44cc8a3e4ebf.png';
 
 const projectsData = [
   {
     id: 1,
-    title: 'Smart Campus Navigator',
-    description: 'A mobile app that helps students navigate campus, find available study spaces, and track shuttle buses in real-time.',
-    image: 'https://images.unsplash.com/photo-1581092921461-39b9feb3f1f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-    techStack: ['React Native', 'Firebase', 'Google Maps API'],
-    githubLink: 'https://github.com',
+    title: 'Super Pong',
+    description: 'A web app that lets multiple users play real-time ping pong matches online, track their progress, and compete in dynamic tournaments with friends or strangers from anywhere.',
+    // image: 'https://images.unsplash.com/photo-1581092921461-39b9feb3f1f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    image: super_pong,
+    techStack: ['React JS', 'Django', 'Solidity'],
+    githubLink: 'https://github.com/kvrasx/Trencsendence/tree/master',
     liveLink: 'https://example.com'
   },
   {
@@ -85,8 +87,8 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="text-portfolio-gray hover:text-portfolio-blue transition-colors flex items-center gap-1"
                 >
-                  <ExternalLink size={18} />
-                  <span>Live Demo</span>
+                  {/* <ExternalLink size={18} />
+                  <span>Live Demo</span> */}
                 </a>
               </CardFooter>
             </Card>
