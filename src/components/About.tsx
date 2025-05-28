@@ -42,8 +42,8 @@ const About = () => {
               <p className="text-portfolio-gray">Student at 1337 Coding school                  -(2022 - 2027)</p>
             </div>
             <div className="bg-portfolio-lightGray p-6 rounded-lg shadow-md">
-              <h4 className="text-xl font-bold text-portfolio-dark mb-2">Hobbies</h4>
-              <p className="text-portfolio-gray">Outside of coding, I’m passionate about art and nature. Hiking and photography inspire my creativity.</p>
+              <h4 className="text-xl font-bold text-portfolio-dark mb-2">Experience</h4>
+              <p className="text-portfolio-gray">Built and maintained ClicktoGet’s website using React.js, enhancing UI responsiveness and collaborating remotely with the team</p>
             </div>
             <div className="bg-portfolio-lightGray p-6 rounded-lg shadow-md">
               <h4 className="text-xl font-bold text-portfolio-dark mb-2">Location</h4>
