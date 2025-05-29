@@ -5,6 +5,8 @@ import { Badge } from '@/components/ui/badge';
 import super_pong from './38e83ea2-7e2d-40f9-896f-44cc8a3e4ebf.png';
 import church from './kanisa.png';
 import incep from './magicstudio-art01.jpeg';
+import todo from './ChatGPT Image May 29, 2025, 11_57_11 AM.png'
+import port from './Screen Shot 2025-05-29 at 12.00.05 PM.png'
 
 const projectsData = [
   {
@@ -35,6 +37,26 @@ const projectsData = [
     image: incep,
     techStack: ['Docker', 'wordpress', 'MariaDB', 'nginx', 'PHP', 'Shell'],
     githubLink: 'https://github.com/momihamm2972/Inception25',
+    liveLink: 'https://example.com'
+  },
+  {
+    id: 4,
+    title: 'TaskGlow',
+    description: 'Minimal to-do list app built with React Native and TypeScript, featuring task persistence, intuitive gestures, and a clean mint-to-blue UI',
+    // image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    image: todo,
+    techStack: ['TypeScript', 'React Native', 'Expo'],
+    githubLink: 'https://github.com/momihamm2972/appReact',
+    liveLink: 'https://example.com'
+  },
+  {
+    id: 5,
+    title: 'PortFolio',
+    description: 'A personal portfolio website built with React.js, TypeScript, and JavaScript, featuring a modern and user-friendly interface. It showcases projects, skills, and experience, with a smooth and responsive design. Integrated EmailJS for easy and direct contact through a built-in form.',
+    // image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    image: port,
+    techStack: ['TypeScript', 'ReactJS', 'JavaScript', 'EmailJS'],
+    githubLink: 'https://github.com/momihamm2972/resume-ranger-collective',
     liveLink: 'https://example.com'
   }
 ];
